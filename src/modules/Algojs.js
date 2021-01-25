@@ -6,14 +6,21 @@ export function isoNum() {
 }
 
 // --------------------------------------------------- Function with arguments -------------------------------------
-
-
+export function myFct(arg1,arg2){
+ return arg1 + arg2
+}
 // --------------------------------------------------- Messi’s Goal Total -------------------------------------
-
+export function goalTotal(arg1,arg2,arg3){
+    return arg1 + arg2 + arg3
+}
 // --------------------------------------------------- Grasshopper Order of Operations -------------------------------------
-
+export function GrasshopperOrder(){
+    return (2 + 2) * (2 + 2) * 2;
+}
 // --------------------------------------------------- Return the First Element in an Array -------------------------------------
-
+export function getFirstValue(){
+    return tab[0]
+}
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
 
