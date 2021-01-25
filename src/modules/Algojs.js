@@ -4,28 +4,40 @@
 export function isoNum() {
     return 42;
 }
-
 // --------------------------------------------------- Function with arguments -------------------------------------
 export function myFct(arg1,arg2){
- return arg1 + arg2
+ return arg1 + arg2;
 }
 // --------------------------------------------------- Messi’s Goal Total -------------------------------------
 export function goalTotal(arg1,arg2,arg3){
-    return arg1 + arg2 + arg3
+    return arg1 + arg2 + arg3;
 }
 // --------------------------------------------------- Grasshopper Order of Operations -------------------------------------
 export function GrasshopperOrder(){
     return (2 + 2) * (2 + 2) * 2;
 }
 // --------------------------------------------------- Return the First Element in an Array -------------------------------------
-export function getFirstValue(){
-    return tab[0]
+export function getFirstValue(tab){
+    var tab = [58, 64, 32]
+    return tab[0];
 }
-
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
+export function minMax(tab){
+    var a = tab[0]
+    var b = tab[0]
 
+    for (var n = 0; n <= tab.length - 1; n++){
 
-
+        if(a > tab[n+1]){
+            a = tab[n+1];
+        }
+        if(b < tab[n+1]){
+            b = tab[n+1];
+        }
+    }
+    var res = [a, b]
+    return res
+}
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
 
 

@@ -7,7 +7,7 @@ import {
     GrasshopperOrder,
     getFirstValue,
     // sortByLength,
-    // minMax,
+    minMax,
     // filterArray,
     // animals,
     // lastItem,
@@ -87,33 +87,33 @@ test("---------getFirstValue---------", t => {
 });
 
 // // ---------------------------------------- Find the Smallest and Biggest Numbers ------------------------------------------------
-// test("---------minMax---------", t => {
+test("---------minMax---------", t => {
 
-//     t.test("TEST 1 : minMax", assert => {
-//         const message = "Should return [1, 5]";
-//         const expected = [1, 5];
-//         const actual = minMax([1, 2, 3, 4, 5]);
+    t.test("TEST 1 : minMax", assert => {
+        const message = "Should return [1, 5]";
+        const expected = [1, 5];
+        const actual = minMax([1, 2, 3, 4, 5]);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 : minMax", assert => {
-//         const message = 'Should return [5, 2334454]';
-//         const expected = [5, 2334454];
-//         const actual = minMax([2334454, 5]);
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : minMax", assert => {
+        const message = 'Should return [5, 2334454]';
+        const expected = [5, 2334454];
+        const actual = minMax([2334454, 5]);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 : minMax", assert => {
-//         const message = 'Should return [1, 1]';
-//         const expected = [1, 1];
-//         const actual = minMax([1]);
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 : minMax", assert => {
+        const message = 'Should return [1, 1]';
+        const expected = [1, 1];
+        const actual = minMax([1]);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------- Sort by String Length --------------------------------------------
 // test("---------sortByLength---------", t => {
