@@ -38,7 +38,7 @@ export function minMax(tab){
     var res = [a, b]
     return res
 }
-// --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
+// --------------------------------------------------- Sort by String Length -------------------------------------
 // export function sortByLength(tab){
 //     var a = 0
 //     var tabs = tab
@@ -53,7 +53,7 @@ export function minMax(tab){
 //     return tabs[n]
 // }
 
-// --------------------------------------------------- Sort by String Length -------------------------------------
+// --------------------------------------------------- Filter Strings from Array -------------------------------------
 export function filterArray(tab){
 var result = [];
 var tab = [1, 2, 3, "a", "b", 4]
@@ -67,11 +67,6 @@ var j = 0;
     console.log('loooooooooooooooooooooooool', result)
     return result
 }
-// --------------------------------------------------- Filter Strings from Array -------------------------------------
-
-// --------------------------------------------------- Return Last Item -------------------------------------
-
-
 
 // --------------------------------------------------- The Farm Problem -------------------------------------
 export function animals(n){
@@ -82,9 +77,26 @@ export function animals(n){
     var pigs = b * 5 
     return chickens + cows + pigs
 }
+// --------------------------------------------------- Return Last Item -------------------------------------
+export function lastItem(tab){
+    var last = tab[tab.length - 1]
+    return last
+}
 // --------------------------------------------------- Reverse an Array -------------------------------------
-
-
+export function reverseArray(){
+    var a = 0
+    var tab = [1, 2, 3, 4]
+    for (var n = 0; n <= tab.length; n++){
+        while (tab[n] < tab [n+1]){
+            a = tab[n];
+            tab[n]=tab[n+1];
+            tab[n+1] = a;
+            n = 0
+        }
+    }
+    console.log("loioioilioioloiolooioloi",tab)
+    return tab
+}
 // --------------------------------------------------- Return the Next Number from the Integer Passed -------------------------------------
 export function addition(n){
     var n = 9;
@@ -108,19 +120,48 @@ export function boolToString(flag){
 //         result[j] = tab[i];
 //         j++
 //         } 
+        
 //     }
 //     console.log('loooooooooooooooooooooooool', result)
 //     return result
 // }
 // --------------------------------------------------- Array of Multiples -------------------------------------
-
-
+export function arrayOfMultiples(n, l){
+     var tmp = 0
+     var res =[] 
+     for (var i = 1; i <= l ; i++){
+     tmp = i * n
+     res.push(tmp)
+    }
+    console.log("---------------------------------------",tmp)
+    return res
+}
 // --------------------------------------------------- Convert Hours and Minutes into Seconds -------------------------------------
-
+export function convert(h, m){
+    var tmp = h * 3600
+    var tmp1 = m * 60
+    console.log("------------------",tmp, tmp1)
+    return (tmp + tmp1)
+}
 // --------------------------------------------------- Return Negative -------------------------------------
-
+export function returnNegative(n){
+    if(n > 0){
+    var res = n * (-1)
+    return res
+    }
+    return n
+}
 // --------------------------------------------------- Simple Loop -------------------------------------
-
+export function simpleLoop(num){
+    var tmp = 0
+    var res = []
+    for (var n = 0; n < num; n++){
+        tmp = tmp + 1
+        res.push(tmp)
+        }
+        console.log(res)
+    return res
+}
 
 // --------------------------------------------------- Area of a Rectangle -------------------------------------
 

@@ -10,15 +10,15 @@ import {
     // sortByLength,
     filterArray,
     animals,
-    // lastItem,
-    // reverseArray,
+    lastItem,
+    reverseArray,
     addition,
     boolToString,
     // filterArrayInt,
-    // arrayOfMultiples,
-    // convert,
-    // returnNegative,
-    // simpleLoop,
+    arrayOfMultiples,
+    convert,
+    returnNegative,
+    simpleLoop,
     // getArea,
     // makesTen,
     // addUp,
@@ -157,18 +157,18 @@ test("---------filterArray---------", t => {
     });
 });
 
-// // -----------------------------------------------The Farm Problem -----------------------------------------
-// test("---------The Farm Problem---------", t => {
+// // -----------------------------------------------lastItem -----------------------------------------
+test("---------lastItem---------", t => {
 
-//     t.test("lastItem", assert => {
-//         const message = "returns the total number of legs of all the animals.";
-//         const expected = 'g';
-//         const actual = lastItem('The quick brown fox jumped over the lazy dog');
+    t.test("lastItem", assert => {
+        const message = "returns the total number of legs of all the animals.";
+        const expected = 'g';
+        const actual = lastItem('The quick brown fox jumped over the lazy dog');
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------------------- The Farm Problem --------------------------------
 test("---------animals---------", t => {
@@ -184,16 +184,16 @@ test("---------animals---------", t => {
 });
 
 // // ----------------------------------------------- Reverse an Array -----------------------------------------
-// test("---------reverseArray---------", t => {
-//     t.test("reverseArray", assert => {
-//         const message = "reverse an array.";
-//         const expected = [4, 3, 2, 1];
-//         const actual = reverseArray();
+test("---------reverseArray---------", t => {
+    t.test("reverseArray", assert => {
+        const message = "reverse an array.";
+        const expected = [4, 3, 2, 1];
+        const actual = reverseArray();
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------------- Return the Next Number from the Integer Passed --------------------------------------
 test("---------addition---------", t => {
@@ -256,100 +256,100 @@ test("--------boolToString---------", t => {
 // });
 
 // // --------------------------------------------- Array of Multiples -------------------------------------------
-// test("---------arrayOfMultiples---------", t => {
-//     t.test("TEST 1 : arrayOfMultiples", assert => {
-//         const message = "converts an object into an array.  Your function Should return [7, 14, 21, 28, 35]";
-//         const expected = [7, 14, 21, 28, 35];
-//         const actual = arrayOfMultiples(7, 5);
+test("---------arrayOfMultiples---------", t => {
+    t.test("TEST 1 : arrayOfMultiples", assert => {
+        const message = "converts an object into an array.  Your function Should return [7, 14, 21, 28, 35]";
+        const expected = [7, 14, 21, 28, 35];
+        const actual = arrayOfMultiples(7, 5);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 : arrayOfMultiples", assert => {
-//         const message = "converts an object into an array. Your function  Should return  [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]";
-//         const expected = [12, 24, 36, 48, 60, 72, 84, 96, 108, 120];
-//         const actual = arrayOfMultiples(12, 10);
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : arrayOfMultiples", assert => {
+        const message = "converts an object into an array. Your function  Should return  [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]";
+        const expected = [12, 24, 36, 48, 60, 72, 84, 96, 108, 120];
+        const actual = arrayOfMultiples(12, 10);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 : arrayOfMultiples", assert => {
-//         const message = "converts an object into an array. Your function  Should return [17, 34, 51, 68, 85, 102]";
-//         const expected = [17, 34, 51, 68, 85, 102];
-//         const actual = arrayOfMultiples(17, 6);
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 : arrayOfMultiples", assert => {
+        const message = "converts an object into an array. Your function  Should return [17, 34, 51, 68, 85, 102]";
+        const expected = [17, 34, 51, 68, 85, 102];
+        const actual = arrayOfMultiples(17, 6);
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ------------------------------------------- Convert Hours and Minutes into Seconds ---------------------------------------------
-// test("---------convert---------", t => {
-//     t.test("TEST 1 :  convert", assert => {
-//         const message = "converts the args to seconds.  Your function  Should return 3780";
-//         const expected = 3780;
-//         const actual = convert(1, 3);
+test("---------convert---------", t => {
+    t.test("TEST 1 :  convert", assert => {
+        const message = "converts the args to seconds.  Your function  Should return 3780";
+        const expected = 3780;
+        const actual = convert(1, 3);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 :  convert", assert => {
-//         const message = "converts the args to seconds.  Your function  Should return 7200";
-//         const expected = 7200;
-//         const actual = convert(2, 0);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 :  convert", assert => {
+        const message = "converts the args to seconds.  Your function  Should return 7200";
+        const expected = 7200;
+        const actual = convert(2, 0);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 :  convert", assert => {
-//         const message = "converts the args to seconds. Your function  Should return 0";
-//         const expected = 0;
-//         const actual = convert(0, 0);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 :  convert", assert => {
+        const message = "converts the args to seconds. Your function  Should return 0";
+        const expected = 0;
+        const actual = convert(0, 0);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // --------------------------------------------- Return Negative -------------------------------------------
-// test("---------returnNegative---------", t => {
-//     t.test("TEST 1 :  returnNegative", assert => {
-//         const message = "returns negative of that number.  Your function  Should return -4";
-//         const expected = -4;
-//         const actual = returnNegative(4);
+test("---------returnNegative---------", t => {
+    t.test("TEST 1 :  returnNegative", assert => {
+        const message = "returns negative of that number.  Your function  Should return -4";
+        const expected = -4;
+        const actual = returnNegative(4);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 :  returnNegative", assert => {
-//         const message = "returns negative of that number.  Your function  Should return -4";
-//         const expected = -4;
-//         const actual = returnNegative(-4);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 :  returnNegative", assert => {
+        const message = "returns negative of that number.  Your function  Should return -4";
+        const expected = -4;
+        const actual = returnNegative(-4);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 :  returnNegative", assert => {
-//         const message = "returns negative of that number. Your function  Should return 0";
-//         const expected = 0;
-//         const actual = returnNegative(0);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 :  returnNegative", assert => {
+        const message = "returns negative of that number. Your function  Should return 0";
+        const expected = 0;
+        const actual = returnNegative(0);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ------------------------------------------------- Simple Loop---------------------------------------
-// test("---------Simple Loop---------", t => {
-//     t.test("SimpleLoop     ----> 1 TEST", assert => {
-//         const message = "returns negative of that number.  Your function  Should return -4";
-//         const expected = [1, 2, 3, 4, 5, 6];
-//         const actual = simpleLoop(6);
+test("---------Simple Loop---------", t => {
+    t.test("SimpleLoop     ----> 1 TEST", assert => {
+        const message = "returns negative of that number.  Your function  Should return -4";
+        const expected = [1, 2, 3, 4, 5, 6];
+        const actual = simpleLoop(6);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ---------------------------------------------Area of a Rectangle-------------------------------------------
 // test("---------Area of a Rectangle---------", t => {
