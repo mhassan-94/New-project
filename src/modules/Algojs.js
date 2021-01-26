@@ -39,7 +39,19 @@ export function minMax(tab){
     return res
 }
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
-
+// export function sortByLength(tab){
+//     var a = 0
+//     var tabs = tab
+//     for (var n = 0; n <= tab.length - 1; n++){
+//         for (var t = 0; t <= tab.length; t++)
+//         if(tabs[n].length > tabs[t].length){
+//             a = tabs[n]
+//             tabs[n]= tabs[t]
+//             tabs[t]= a
+//         }
+//     }
+//     return tabs[n]
+// }
 
 // --------------------------------------------------- Sort by String Length -------------------------------------
 
@@ -56,8 +68,11 @@ export function minMax(tab){
 
 
 // --------------------------------------------------- Return the Next Number from the Integer Passed -------------------------------------
-
-
+export function addition(n){
+    var n = 9;
+    console.log('loooooooooooooooooooooooooool', n + 1)
+    return n + 1 
+}
 // --------------------------------------------------- Boolean to String Conversion -------------------------------------
 
 

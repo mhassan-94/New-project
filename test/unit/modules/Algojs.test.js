@@ -6,13 +6,13 @@ import {
     goalTotal,
     GrasshopperOrder,
     getFirstValue,
-    // sortByLength,
     minMax,
+    // sortByLength,
     // filterArray,
     // animals,
     // lastItem,
     // reverseArray,
-    // addition,
+    addition,
     // boolToString,
     // filterArrayInt,
     // arrayOfMultiples,
@@ -196,16 +196,16 @@ test("---------minMax---------", t => {
 // });
 
 // // -------------------------------------------------- Return the Next Number from the Integer Passed --------------------------------------
-// test("---------addition---------", t => {
-//     t.test("addition", assert => {
-//         const message = "Increments the number by + 1 and returns the result.";
-//         const expected = 10;
-//         const actual = addition();
+test("---------addition---------", t => {
+    t.test("addition", assert => {
+        const message = "Increments the number by + 1 and returns the result.";
+        const expected = 10;
+        const actual = addition();
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // --------------------------------------------------- Boolean to String Conversion -------------------------------------
 // test("--------boolToString---------", t => {
