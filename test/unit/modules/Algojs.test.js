@@ -13,7 +13,7 @@ import {
     // lastItem,
     // reverseArray,
     addition,
-    // boolToString,
+    boolToString,
     // filterArrayInt,
     // arrayOfMultiples,
     // convert,
@@ -208,24 +208,24 @@ test("---------addition---------", t => {
 });
 
 // // --------------------------------------------------- Boolean to String Conversion -------------------------------------
-// test("--------boolToString---------", t => {
-//     t.test("TEST 1 : boolToString", assert => {
-//         const message = "returns boleans as a string.Like True";
-//         const expected = 'true';
-//         const actual = boolToString(true);
+test("--------boolToString---------", t => {
+    t.test("TEST 1 : boolToString", assert => {
+        const message = "returns boleans as a string.Like True";
+        const expected = 'true';
+        const actual = boolToString(true);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 : boolToString", assert => {
-//         const message = "returns boleans as a string.Like False";
-//         const expected = 'false';
-//         const actual = boolToString(false);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : boolToString", assert => {
+        const message = "returns boleans as a string.Like False";
+        const expected = 'false';
+        const actual = boolToString(false);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ----------------------------------------------- Filter out Strings from an Array -----------------------------------------
 // test("---------filterArrayInt---------", t => {

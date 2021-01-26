@@ -74,8 +74,12 @@ export function addition(n){
     return n + 1 
 }
 // --------------------------------------------------- Boolean to String Conversion -------------------------------------
-
-
+export function boolToString(flag){
+   if (flag === true){
+       return "true"; 
+   }
+    return "false";
+}
 // --------------------------------------------------- Filter out Strings from an Array -------------------------------------
 
 // --------------------------------------------------- Array of Multiples -------------------------------------
