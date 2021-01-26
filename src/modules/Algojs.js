@@ -39,19 +39,19 @@ export function minMax(tab){
     return res
 }
 // --------------------------------------------------- Sort by String Length -------------------------------------
-// export function sortByLength(tab){
-//     var a = 0
-//     var tabs = tab
-//     for (var n = 0; n <= tab.length - 1; n++){
-//         for (var t = 0; t <= tab.length; t++)
-//         if(tabs[n].length > tabs[t].length){
-//             a = tabs[n]
-//             tabs[n]= tabs[t]
-//             tabs[t]= a
-//         }
-//     }
-//     return tabs[n]
-// }
+export function sortByLength(tab){
+    var a = 0
+    for (var n = 0; n < tab.length; n++){
+        for (var t = n + 1; t < tab.length; t++)
+        if(tab[t].length < tab[n].length){
+            a = tab[t]
+            tab[t]= tab[n]
+            tab[n]= a
+        }
+    }
+    console.log(tab)
+    return tab
+}
 
 // --------------------------------------------------- Filter Strings from Array -------------------------------------
 export function filterArray(tab){
