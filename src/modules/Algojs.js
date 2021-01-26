@@ -54,8 +54,19 @@ export function minMax(tab){
 // }
 
 // --------------------------------------------------- Sort by String Length -------------------------------------
-
-
+export function filterArray(tab){
+var result = [];
+var tab = [1, 2, 3, "a", "b", 4]
+var j = 0;
+    for(var i = 0; i < tab.length; i++){
+        if(tab[i] <= 0 || tab[i] >= 0){ 
+        result[j] = tab[i];
+        j++
+        } 
+    }
+    console.log('loooooooooooooooooooooooool', result)
+    return result
+}
 // --------------------------------------------------- Filter Strings from Array -------------------------------------
 
 // --------------------------------------------------- Return Last Item -------------------------------------
@@ -63,7 +74,14 @@ export function minMax(tab){
 
 
 // --------------------------------------------------- The Farm Problem -------------------------------------
-
+export function animals(n){
+    var a = 2
+    var b = 4
+    var chickens = a * 2
+    var cows = b * 3
+    var pigs = b * 5 
+    return chickens + cows + pigs
+}
 // --------------------------------------------------- Reverse an Array -------------------------------------
 
 
@@ -81,7 +99,19 @@ export function boolToString(flag){
     return "false";
 }
 // --------------------------------------------------- Filter out Strings from an Array -------------------------------------
+// export function filterArrayInt(tab){
+// var result = [];
+// var j = 0;
 
+//     for(var i = 0; i < tab.length; i++){
+//         if(tab[i] <= 0 || tab[i] >= 0){ 
+//         result[j] = tab[i];
+//         j++
+//         } 
+//     }
+//     console.log('loooooooooooooooooooooooool', result)
+//     return result
+// }
 // --------------------------------------------------- Array of Multiples -------------------------------------
 
 

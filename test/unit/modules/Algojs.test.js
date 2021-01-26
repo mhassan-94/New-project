@@ -8,8 +8,8 @@ import {
     getFirstValue,
     minMax,
     // sortByLength,
-    // filterArray,
-    // animals,
+    filterArray,
+    animals,
     // lastItem,
     // reverseArray,
     addition,
@@ -145,17 +145,17 @@ test("---------minMax---------", t => {
 // });
 
 // // -------------------------------------------------- Filter Strings from Array --------------------------------------
-// test("---------filterArray---------", t => {
+test("---------filterArray---------", t => {
 
-//     t.test("filterArray", assert => {
-//         const message = "returns an array of integers only.";
-//         const expected = [1, 2, 3, 4];
-//         const actual = filterArray();
+    t.test("filterArray", assert => {
+        const message = "returns an array of integers only.";
+        const expected = [1, 2, 3, 4];
+        const actual = filterArray();
 
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -----------------------------------------------The Farm Problem -----------------------------------------
 // test("---------The Farm Problem---------", t => {
@@ -171,17 +171,17 @@ test("---------minMax---------", t => {
 // });
 
 // // -------------------------------------------------------- The Farm Problem --------------------------------
-// test("---------animals---------", t => {
+test("---------animals---------", t => {
 
-//     t.test("animals", assert => {
-//         const message = "returns the total number of legs of all the animals.";
-//         const expected = 36;
-//         const actual = animals();
+    t.test("animals", assert => {
+        const message = "returns the total number of legs of all the animals.";
+        const expected = 36;
+        const actual = animals();
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ----------------------------------------------- Reverse an Array -----------------------------------------
 // test("---------reverseArray---------", t => {
