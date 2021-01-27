@@ -20,7 +20,7 @@ import {
     returnNegative,
     simpleLoop,
     getArea,
-    // makesTen,
+    makesTen,
     // addUp,
     // matchHouses,
 
@@ -388,32 +388,32 @@ test("---------Area of a Rectangle---------", t => {
 });
 
 // // -----------------------------------------------Two Makes Ten-----------------------------------------
-// test("---------Two Makes Ten---------", t => {
-//     t.test("TEST 1 :  makesTen", assert => {
-//         const message = "Your function  Should return true";
-//         const expected = true;
-//         const actual = makesTen(9, 10);
+test("---------Two Makes Ten---------", t => {
+    t.test("TEST 1 :  makesTen", assert => {
+        const message = "Your function  Should return true";
+        const expected = true;
+        const actual = makesTen(9, 10);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 :  makesTen", assert => {
-//         const message = "Your function  Should return false";
-//         const expected = false;
-//         const actual = makesTen(9, 9);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 :  makesTen", assert => {
+        const message = "Your function  Should return false";
+        const expected = false;
+        const actual = makesTen(9, 9);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 :  makesTen", assert => {
-//         const message = "Your function  Should return true";
-//         const expected = true;
-//         const actual = makesTen(1, 9);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 :  makesTen", assert => {
+        const message = "Your function  Should return true";
+        const expected = true;
+        const actual = makesTen(1, 9);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ----------------------------------Add up the Numbers from a Single Number------------------------------------------------------
 // test("---------Add up the Numbers from a Single Number---------", t => {
