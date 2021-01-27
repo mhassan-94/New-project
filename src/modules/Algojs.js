@@ -164,7 +164,13 @@ export function simpleLoop(num){
 }
 
 // --------------------------------------------------- Area of a Rectangle -------------------------------------
-
+export function getArea(n, t){
+    if (n <= 0 || t <= 0){
+        return -1
+    }
+    console.log(n * t)
+    return n * t
+}
 // --------------------------------------------------- Two Makes Ten -------------------------------------
 
 
