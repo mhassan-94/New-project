@@ -114,13 +114,11 @@ export function boolToString(flag){
 // export function filterArrayInt(tab){
 // var result = [];
 // var j = 0;
-
 //     for(var i = 0; i < tab.length; i++){
 //         if(tab[i] <= 0 || tab[i] >= 0){ 
 //         result[j] = tab[i];
 //         j++
 //         } 
-        
 //     }
 //     console.log('loooooooooooooooooooooooool', result)
 //     return result
@@ -162,7 +160,6 @@ export function simpleLoop(num){
         console.log(res)
     return res
 }
-
 // --------------------------------------------------- Area of a Rectangle -------------------------------------
 export function getArea(n, t){
     if (n <= 0 || t <= 0){
@@ -179,5 +176,20 @@ export function makesTen(n, t){
     return false;
 }
 // --------------------------------------------------- Add up the Numbers from a Single Number -------------------------------------
-
+export function addUp(n){
+     var tmp = 0
+     var res =[] 
+     for (var i = 1; i <= n; i++){
+     tmp = tmp + i
+    }
+    console.log("------------------------",tmp)
+    return tmp
+}
 // --------------------------------------------------- Matchstick Houses -------------------------------------
+export function matchHouses(step){
+    var a = 6
+    var b = 5 
+    var res = a + (b * (step - 1))
+    console.log("------------",res)
+    return res
+}

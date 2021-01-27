@@ -21,8 +21,8 @@ import {
     simpleLoop,
     getArea,
     makesTen,
-    // addUp,
-    // matchHouses,
+    addUp,
+    matchHouses,
 
 } from "../../../src/modules/Algojs";
 
@@ -416,66 +416,66 @@ test("---------Two Makes Ten---------", t => {
 });
 
 // // ----------------------------------Add up the Numbers from a Single Number------------------------------------------------------
-// test("---------Add up the Numbers from a Single Number---------", t => {
-//     t.test("TEST 1 : addUp", assert => {
-//         const message = "Your function  Should return 10";
-//         const expected = 10;
-//         const actual = addUp(4);
+test("---------Add up the Numbers from a Single Number---------", t => {
+    t.test("TEST 1 : addUp", assert => {
+        const message = "Your function  Should return 10";
+        const expected = 10;
+        const actual = addUp(4);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 : addUp", assert => {
-//         const message = "Your function  Should return 91";
-//         const expected = 91;
-//         const actual = addUp(13);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : addUp", assert => {
+        const message = "Your function  Should return 91";
+        const expected = 91;
+        const actual = addUp(13);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 : addUp", assert => {
-//         const message = "Your function  Should return 180300";
-//         const expected = 180300;
-//         const actual = addUp(600);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 : addUp", assert => {
+        const message = "Your function  Should return 180300";
+        const expected = 180300;
+        const actual = addUp(600);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ----------------------------------Matchstick Houses------------------------------------------------------
-// test("---------Matchstick Houses---------", t => {
-//     t.test("TEST 1 : matchHouses", assert => {
-//         const message = "Your function  Should return 6";
-//         const expected = 6;
-//         const actual = matchHouses(1);
+test("---------Matchstick Houses---------", t => {
+    t.test("TEST 1 : matchHouses", assert => {
+        const message = "Your function  Should return 6";
+        const expected = 6;
+        const actual = matchHouses(1);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 : matchHouses", assert => {
-//         const message = "Your function  Should return 21";
-//         const expected = 21;
-//         const actual = matchHouses(4);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : matchHouses", assert => {
+        const message = "Your function  Should return 21";
+        const expected = 21;
+        const actual = matchHouses(4);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test(" TEST 3 : matchHouses", assert => {
-//         const message = "Your function  Should return 31";
-//         const expected = 31;
-//         const actual = matchHouses(6);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test(" TEST 3 : matchHouses", assert => {
+        const message = "Your function  Should return 31";
+        const expected = 31;
+        const actual = matchHouses(6);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 4 : matchHouses", assert => {
-//         const message = "Your function  Should return 436";
-//         const expected = 436;
-//         const actual = matchHouses(87);
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 4 : matchHouses", assert => {
+        const message = "Your function  Should return 436";
+        const expected = 436;
+        const actual = matchHouses(87);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
