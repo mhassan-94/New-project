@@ -111,18 +111,17 @@ export function boolToString(flag){
     return "false";
 }
 // --------------------------------------------------- Filter out Strings from an Array -------------------------------------
-// export function filterArrayInt(tab){
-// var result = [];
-// var j = 0;
-//     for(var i = 0; i < tab.length; i++){
-//         if(tab[i] <= 0 || tab[i] >= 0){ 
-//         result[j] = tab[i];
-//         j++
-//         } 
-//     }
-//     console.log('loooooooooooooooooooooooool', result)
-//     return result
-// }
+export function filterArrayInt(tab){
+    var res = [];
+
+    for (var i = 0; i < tab.length; i++){
+        var test = (tab[i]);
+        if (typeof test === 'number'){
+            res.push(tab[i]);
+        }
+    }
+    return res;
+}
 // --------------------------------------------------- Array of Multiples -------------------------------------
 export function arrayOfMultiples(n, l){
      var tmp = 0
